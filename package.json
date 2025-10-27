@@ -1,0 +1,48 @@
+{
+  "name": "@operrouter/js-operrouter",
+  "version": "0.1.0",
+  "description": "JavaScript/TypeScript SDK for OperRouter - operator lifecycle management framework",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "node --test dist/**/*.test.js",
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean"
+  },
+  "keywords": [
+    "operrouter",
+    "operator",
+    "datasource",
+    "llm",
+    "postgresql",
+    "mysql",
+    "redis",
+    "openai",
+    "anthropic"
+  ],
+  "author": "OperRouter Team",
+  "license": "MIT",
+  "dependencies": {
+    "@bufbuild/protobuf": "^1.10.0",
+    "@connectrpc/connect": "^1.4.0",
+    "@connectrpc/connect-web": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/operrouter/operrouter-core.git",
+    "directory": "sdks/js-operrouter"
+  }
+}
