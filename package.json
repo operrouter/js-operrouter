@@ -1,8 +1,7 @@
 {
   "name": "@operrouter/js-operrouter",
-  "version": "0.1.1",
+  "version": "",
   "description": "JavaScript/TypeScript SDK for OperRouter - operator lifecycle management framework",
-  "packageManager": "pnpm@8.15.0",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
